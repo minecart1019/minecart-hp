@@ -1,3 +1,7 @@
+:root {
+    --maincolor: #4169e1;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -8,139 +12,31 @@ body {
     left: 0px;
 }
 
-    
-nav li,b{
-    color: white;
-    font-size: 12pt;
-    font-weight: lighter;
-    list-style-type: none;
+.nav {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    z-index: 99;
 }
-    
-nav a {
-    color: white;
+
+.nav h1 {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav a {
+    color: #000;
     text-decoration: none;
-    text-align: center;
-    height: 52px;
-}
-    
-nav a:visited {
-    color: white;
-}
-    
-nav a:hover {
-    color: #000000;
-    background-color: #ffffff;
 }
 
-@media(max-width: 768px) {
-    nav>.not_mobile {
-        display: none;
-    }
-
-    nav>.mobile {
-        background-color: #4169e1;
-        position: fixed;
-        width: 100%;
-        height: 52px;
-        z-index: 3;
-    }
-    
-    nav>.mobile>.logo {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav>.mobile>i {
-        float: right;
-    }
-
-    nav>.mobile img {
-        display: none;
-    }
-
-    nav>.mobile li {
-        display: inline-block;
-        text-align: center;
-    }
-
-    nav>.mobile>.menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        float: right;
-        background-color: #4169e1;
-        border: 1px #ffffff solid;
-    }
-}
-
-@media(min-width: 768px) {
-    nav>.mobile {
-        display: none;
-    }
-
-    nav>.not_mobile {
-        background-color: #4169e1;
-        position: fixed;
-        width: 100%;
-        height: 52px;
-        z-index: 3;
-    }
-    
-    nav>.not_mobile>.logo {
-        height: 52px;
-        display: flex;
-        float: left;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    nav>.not_mobile>.menu {
-        display: flex;
-        float: right;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    nav>.not_mobile img {
-        height: 48px;
-        width: auto;
-        display: block;
-    }
-}
-
-#home>.home-img {
-    position: static;
-    display: inline;
-    text-align: center;
-    top: 52px;
-    z-index: 1;
-}
-
-#home>.home-img>img {
-    width: 98%;
-    height: auto;
-}
-
-#home>.content {
-    position: static;
-    top: 100%;
-    background-color: white;
-    z-index: 2;
-}
-
-#download>.content {
-    position: absolute;
-    top: 52px;
-    background-color: white;
-    z-index: 2;
-}
-
-#help>.content {
-    position: absolute;
-    top: 52px;
-    background-color: white;
-    z-index: 2;
+.nav a:hover {
+    color: #4169e1;
 }
