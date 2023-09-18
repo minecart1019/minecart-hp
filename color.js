@@ -1,1 +1,0 @@
-var main_color = "#4169e1"
